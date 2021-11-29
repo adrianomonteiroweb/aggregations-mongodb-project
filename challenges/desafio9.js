@@ -1,6 +1,6 @@
 db.trips.aggregate([
   {
-    $match: { $and: [{ birthYear: { $ne: null } }, { birthYear: { $ne: " " } }] },
+    $match: { $and: [{ birthYear: { $ne: null } }, { birthYear: { $ne: "" } }] },
   },
   {
     $group: {
