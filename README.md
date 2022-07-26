@@ -1,16 +1,6 @@
-### Termos e acordos
+# Projeto Aggregations!
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
-
----
-
-# Boas vindas ao repositório do projeto de Aggregations!
-
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo e, se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
----
+Projeto de aggregation pipeline. 🚀
 
 # Sumário
 
@@ -18,11 +8,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Entregáveis](#entregáveis)
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
   - [Desenvolvimento](#desenvolvimento)
-  - [Data de entrega](#data-de-entrega)
 - [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-  - [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
 - [Como desenvolver](#como-desenvolver)
   - [Linter](#linter)
   - [Instrução para estrutura dos arquivos](#Instrução-para-estrutura-dos-arquivos)
@@ -44,14 +30,13 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - [Desafio 12](#Desafio-12)
     - [Desafio 13](#Desafio-13)
     - [Desafio 14](#Desafio-14)
-- [Avisos Finais](#avisos-finais)
-
----
 
 # Habilidades
+
 Neste projeto você será capaz de:
+
 - Executar buscas complexas no banco mongoDB
-- Usar os operadores de aggregation para fazer uma pipeline  
+- Usar os operadores de aggregation para fazer uma pipeline
 
 ---
 
@@ -67,98 +52,26 @@ Vamos trabalhar com dados do **IMDB**, dados sobre empresas aéreas e também da
 
 Então vamos lá aplicar seu conhecimento nesses cenários muito legais! 😉
 
----
-
-## Data de Entrega
-
-    - Serão `2` dias de projeto.
-    - Data de entrega para avaliação final do projeto: `06/12/2021 - 14:00h`.
-
----
-
-# Instruções para entregar seu projeto:
-
-## ANTES DE COMEÇAR A DESENVOLVER:
-
-1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-013-c-mongodb-aggregations`.
-  * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-013-c-mongodb-aggregations`
-
-2. Crie uma branch a partir da branch `master`
-  * Verifique que você está na branch `master`
-    * Exemplo: `git branch`
-  * Se não estiver, mude para a branch `master`
-    * Exemplo: `git checkout master`
-  * Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
-    * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b seu-nome-mongodb-aggregations`
-
-3. Para cada exercício você deve criar um novo arquivo JS **dentro de uma pasta na raiz do seu projeto chamada `challenges`** seguindo a seguinte estrutura:
-  * desafio1.js, desafio2.js, ..., desafioN.js
-
-4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-  * Verifique que as mudanças ainda não estão no _stage_
-    * Exemplo: `git status` (deve aparecer o arquivo que você alterou como desafio1.js)
-  * Adicione o novo arquivo ao _stage_ do Git
-      * Exemplo:
-        * `git add .` (adicionando arquivo de solução _challenges/desafio1.js_ para desafio 1)
-        * `git status` (deve aparecer listado o arquivo _challenges/desafio1.js_ em verde)
-  * Faça o `commit` inicial
-      * Exemplo:
-        * `git commit -m 'iniciando o projeto MongoDB aggregations'` (fazendo o primeiro commit)
-        * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-5. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin seu-nome-mongodb-aggregations`
-
-6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-013-c-mongodb-aggregations/pulls)
-  * Clique no botão verde _"New pull request"_
-  * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-  * Clique no botão verde _"Create pull request"_
-  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-  * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-013-c-mongodb-aggregations/pulls) e confira que o seu _Pull Request_ está criado
-
----
-
-## DURANTE O DESENVOLVIMENTO
-
-* ⚠ **LEMBRE-SE DE CRIAR TODOS OS ARQUIVOS DENTRO DA PASTA `challenges`** ⚠
-
-* Faça `commits` das alterações que você fizer no código regularmente
-
-* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-* Os comandos que você utilizará com mais frequência são:
-  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-  2. `git add` _(para adicionar arquivos ao stage do Git)_
-  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-  4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
----
-
 # Como desenvolver
-Se atente a [Instrução para estrutura dos arquivos](#Instrução-para-estrutura-dos-arquivos), ela é essencial para a avaliação do projeto.
 
+Se atente a [Instrução para estrutura dos arquivos](#Instrução-para-estrutura-dos-arquivos), ela é essencial para a avaliação do projeto.
 
 ⚠️ Para quem não possui o MongoDB instalado e está utilizando o docker ⚠️
 
 Para executar os testes locamente é necessário seguir os seguintes passos:
+
 1. Acesse o terminal na raiz da pasta do projeto;
 2. Crie um container com um volume apontando para a pasta do projeto `docker run -d --name=nomeDoContainer -v "$PWD:/app" -p 27017:27017 mongo`;
 3. Com o container em execução, acesse o terminal do container `docker exec -it nomeDoContainer bash`;
 4. No terminal do container acesse o diretório mapeado no volume (no exemplo acima `/app`);
 5. E por fim execute o script de testes do projeto: `./scripts/evaluate.sh`.
-Se por algum motivo a execução do container for finalizada, basta iniciá-lo novamente com o comando `docker start nomeDoContainer` e seguir a partir do passo 3.
+   Se por algum motivo a execução do container for finalizada, basta iniciá-lo novamente com o comando `docker start nomeDoContainer` e seguir a partir do passo 3.
 
 ---
 
 ## Linter
 
-Para garantir a qualidade do código, vamos utilizar neste projeto o linter ESLint. Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível e de fácil manutenção! 
+Para garantir a qualidade do código, vamos utilizar neste projeto o linter ESLint. Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível e de fácil manutenção!
 
 Para poder rodar os `ESLint` em um projeto basta executar o comando `npm install` dentro do projeto e depois `npm run lint`. Se a análise do `ESLint` encontrar problemas no seu código, tais problemas serão mostrados no seu terminal. Se não houver problema no seu código, nada será impresso no seu terminal.
 
@@ -168,21 +81,23 @@ Você pode também instalar o plugin do `ESLint` no `VSCode`, bastar ir em exten
 
 ---
 
-## Instrução para estrutura dos arquivos 
+## Instrução para estrutura dos arquivos
 
 Temos, neste projeto, uma série de desafios com diferentes níveis de complexidade. Cada desafio deve ser resolvido em seu arquivo próprio.
 
 1. Leia a pergunta e crie no diretório `challenges` um arquivo chamado `desafioN.js`, em que N é o número do desafio.
 
 2. O arquivo deve conter apenas o código MQL (_Mongo Query Language_) do desafio resolvido. **Não se esqueça de incluir o ponto e vírgula (";")** no final de suas queries, como no exemplo a seguir:
-    ```js
-    db.movies.count();
-    ```
-    ⚠️ **Restrições** ⚠️:
 
-      - **Não se deve usar aspas simples** para especificar campos e/ou valores. Quando for necessário usar aspas, **use somente aspas duplas**;
+   ```js
+   db.movies.count();
+   ```
 
-      - **Não se deve usar o comando `use aggregations`**, haja visto que **os testes já se conectam automaticamente à base `aggregations`**.
+   ⚠️ **Restrições** ⚠️:
+
+   - **Não se deve usar aspas simples** para especificar campos e/ou valores. Quando for necessário usar aspas, **use somente aspas duplas**;
+
+   - **Não se deve usar o comando `use aggregations`**, haja visto que **os testes já se conectam automaticamente à base `aggregations`**.
 
 3. Faça isso até finalizar todos os desafios e depois siga as instruções de como entregar o projeto em [**Instruções para entregar seu projeto**](#instruções-para-entregar-seu-projeto).
 
@@ -196,16 +111,16 @@ Qualquer dúvida, procure a monitoria. Lembre-se que você pode consultar nosso 
 
 ## Instruções para restaurar o banco de dados `aggregations`
 
-1. Abra o terminal e conecte-se à sua instância local do **MongoDB**. Se você receber uma mensagem de erro com uma mensagem como ***Connection refused***, tente reiniciar sua instância ([veja como fazer isso aqui](https://app.betrybe.com/course/back-end/introducao-ao-mongodb/mongodb-introducao/d396e5a2-d5c9-4f3a-b723-1a1d3ea06b3d/conteudos/b9646f17-77fc-401e-bab5-421fdc37428e/conectando/f63aa7aa-ac8f-4253-bf76-7fc71e4eac5a?use_case=side_bar)).
+1. Abra o terminal e conecte-se à sua instância local do **MongoDB**. Se você receber uma mensagem de erro com uma mensagem como **_Connection refused_**, tente reiniciar sua instância ([veja como fazer isso aqui](https://app.betrybe.com/course/back-end/introducao-ao-mongodb/mongodb-introducao/d396e5a2-d5c9-4f3a-b723-1a1d3ea06b3d/conteudos/b9646f17-77fc-401e-bab5-421fdc37428e/conectando/f63aa7aa-ac8f-4253-bf76-7fc71e4eac5a?use_case=side_bar)).
 
 2. Agora que você tem certeza de que a sua instância está no ar e que você está conectado a ela, digite `exit`. Você voltará ao terminal para iniciar a importação dos dados.
 
 3. Na raiz do diretório do projeto, execute o seguinte comando que fará a restauração da base de dados `aggregations`:
-    ```sh
-    DBNAME=aggregations ./scripts/resetdb.sh assets
-    ```
+   ```sh
+   DBNAME=aggregations ./scripts/resetdb.sh assets
+   ```
 
-  * A execução desse script criará um banco de dados chamado `aggregations` e importará todas as suas coleções.
+- A execução desse script criará um banco de dados chamado `aggregations` e importará todas as suas coleções.
 
 ⚠️ Como tanto esse script quanto o script de execução local dos testes (mostrado na [seção seguinte](#execução-de-testes-unitários)), **restauram a base de dados `aggregations`**, se atente a salvar seu progresso nos arquivos de desafio! ⚠️
 
@@ -214,6 +129,7 @@ Qualquer dúvida, procure a monitoria. Lembre-se que você pode consultar nosso 
 ## Execução de testes unitários
 
 Para executar localmente os testes, é preciso escrever o seguinte no seu terminal, estando na raiz do diretório do projeto:
+
 ```sh
 ./scripts/evaluate.sh
 ```
@@ -231,22 +147,24 @@ Para executar somente o teste de um desafio, execute o comando abaixo, substitui
 ---
 
 # Requisitos do projeto
+
 ## Lista de requisitos
 
 Monte queries para encontrar as informações dos desafios a seguir.
 
 ---
+
 ### Desafio 1
 
 Ajude a Trybe a escolher um filme para a próxima noite! Baseado em uma pesquisa, decidimos que os filmes em potencial devem atender alguns critérios, vejamos:
 
-#### Retorne todos os filmes que satisfaça, através de uma  _pipeline_, as condições abaixo
+#### Retorne todos os filmes que satisfaça, através de uma _pipeline_, as condições abaixo
 
-* `imdb.rating` deve ser maior ou igual a `7`;
-* `genres` não deve conter `Crime` ou `Horror`;
-* `rated` deve ser igual a `PG` ou `G`;
-* `languages` contém `English` e `Spanish`.
-* Utilize a coleção `movies`.
+- `imdb.rating` deve ser maior ou igual a `7`;
+- `genres` não deve conter `Crime` ou `Horror`;
+- `rated` deve ser igual a `PG` ou `G`;
+- `languages` contém `English` e `Spanish`.
+- Utilize a coleção `movies`.
 
 Sua query deve retornar `41` documentos.
 
@@ -255,7 +173,6 @@ Sua query deve retornar `41` documentos.
 A escolha do filme da noite foi um sucesso, mas infelizmente ficamos com nossa banda de internet quase esgotada, e ainda precisamos de uma nova recomendação de filme. Para diminuir o volume de dados trafegados:
 
 #### Utilizando o mesmo _pipeline_ anterior, retorne apenas os campos `title`, `rated`, `imdb.rating`, `imdb.votes` e `year`, modificando seus nomes para `titulo`, `avaliado`, `notaIMDB`, `votosIMDB` e `ano`, respectivamente.
-
 
 O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ordem dos campos):
 
@@ -281,7 +198,7 @@ O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ord
 
 Nossa coleção de filmes tem muitos documentos diferentes, alguns com títulos "mais complexos" do que outros. Se quisermos analisar nossa coleção para encontrar títulos de filmes que têm uma só palavra no título, poderíamos buscar todos os filmes da coleção e processar isso na aplicação, mas o `Aggregation Framework` nos permite fazer isso diretamente no lado do banco de dados.
 
-#### Crie uma _pipeline_ que retorna documentos  com o novo campo `title_split`, ela deve seguir as seguintes condições:
+#### Crie uma _pipeline_ que retorna documentos com o novo campo `title_split`, ela deve seguir as seguintes condições:
 
 - `title_split` deve conter uma lista de palavras presentes em `title`.
 - A pipeline deve retornar apenas filmes com o título composto apenas de uma palavra.
@@ -299,17 +216,17 @@ Sua query deve retornar `8068` documentos.
 
 Temos outra noite de filme aqui na Trybe e, desta vez, nós perguntamos à equipe quais são suas pessoas preferidas como atores e/ou atrizes. Aqui está o resultado:
 
-* Sandra Bullock
-* Tom Hanks
-* Julia Roberts
-* Kevin Spacey
-* George Clooney
+- Sandra Bullock
+- Tom Hanks
+- Julia Roberts
+- Kevin Spacey
+- George Clooney
 
 #### Considerando esta lista, crie uma _pipeline_ que retorne o `title` do vigésimo quinto filme da agregação que satisfaz as seguintes condições:
 
 - `countries` é Estados unidos no banco estará classificado como USA
 - `tomatoes.viewer.rating` maior ou igual a `3`
--  Crie um novo campo chamado `num_favs`, que represente quantos atores ou atrizes da nossa lista de favoritos aparecem no elenco (informação do campo `cast` no banco) do filme, caso ele possua favoritos.
+- Crie um novo campo chamado `num_favs`, que represente quantos atores ou atrizes da nossa lista de favoritos aparecem no elenco (informação do campo `cast` no banco) do filme, caso ele possua favoritos.
 - Ordene os resultados por `num_favs`, `tomatoes.viewer.rating` e `title`, todos em ordem decrescente.
 
 **Dica:** coloque a lista de atores e atrizes favoritos em uma variável e explore operadores como `$size` e [`$setIntersection`](https://docs.mongodb.com/manual/reference/operator/aggregation/setIntersection/index.html).
@@ -350,14 +267,14 @@ O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ord
 
 ### Desafio 7
 
-Vamos nos aprofundar um pouco mais em nossa coleção de filmes. 
+Vamos nos aprofundar um pouco mais em nossa coleção de filmes.
 
 #### Conte quantos filmes cada um dos atores e atrizes do elenco (`cast` no banco) já participou e obtenha uma média do campo `imdb.rating` para cada um desses atores e atrizes.
 
 - Traga o nome do ator ou atriz;
 - Número de filmes em que participou
 - Média do imdb desses filmes arredondada para uma casa decimal usando o operador [`$round`](https://docs.mongodb.com/manual/reference/operator/aggregation/round/index.html).
-- Considere somente os membros do elenco de filmes com o idioma inglês (`English`). 
+- Considere somente os membros do elenco de filmes com o idioma inglês (`English`).
 - Exiba a lista em ordem decrescente de documentos pelo número de filmes e nome do ator ou atriz.
 
 Sua query deve retornar `47055` documentos. Cada documento no resultado deve ter exatamente o seguinte formato (incluindo a ordem dos campos):
@@ -372,7 +289,8 @@ Trocando de contexto, vamos utilizar nossa outra coleção que contém dados de 
 
 #### Liste todas as parcerias da coleção `air_alliances`, que voam rotas com um Boing 747 ou um Airbus A380 , para descobrir qual delas tem o maior número de rotas com esses aviões.
 
-No campo `airplane`, na coleção `air_routes`: 
+No campo `airplane`, na coleção `air_routes`:
+
 - Boing 747 está abreviado para `747`
 - Airbus A380 está abreviado para `380`
 
@@ -384,7 +302,7 @@ O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ord
 
 ### Desafio 9
 
-#### A partir da coleção `trips`, determine o menor e o maior ano de nascimento. 
+#### A partir da coleção `trips`, determine o menor e o maior ano de nascimento.
 
 - Guarde essa informação, você precisará dela mais tarde.
 
@@ -400,10 +318,10 @@ O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ord
 
 ### Desafio 10
 
-#### Encontre a duração média de viagens por tipo de usuário. 
+#### Encontre a duração média de viagens por tipo de usuário.
 
-- Exiba o valor em horas com apenas duas casas decimais 
-- Exiba a média de viagens ordenada de forma crescente. 
+- Exiba o valor em horas com apenas duas casas decimais
+- Exiba a média de viagens ordenada de forma crescente.
 
 Para arredondar a média use o [`$round`](https://docs.mongodb.com/manual/reference/operator/aggregation/round/index.html).
 
@@ -454,7 +372,7 @@ O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ord
 
 ### Desafio 14
 
-#### Baseado na duração média das viagens, determine quais são as `5` bicicletas que foram mais utilizadas. 
+#### Baseado na duração média das viagens, determine quais são as `5` bicicletas que foram mais utilizadas.
 
 - Exiba o resultado em minutos arredondados para cima e em ordem decrescente.
 
@@ -467,21 +385,3 @@ O resultado da sua query deve ter exatamente o seguinte formato (incluindo a ord
 { "bikeId" : <bike_id>, "duracaoMedia" : <duracao_media> }
 { "bikeId" : <bike_id>, "duracaoMedia" : <duracao_media> }
 ```
-
-
----
-### Revisando um pull request
-
-À medida que você e as outras pessoas que estudam na Trybe forem entregando os projetos, vocês receberão um alerta via Slack para também fazer a revisão dos Pull Requests dos seus colegas. Fiquem atentos às mensagens do "Pull Reminders" no Slack!
-
-Use o material que você já viu sobre [Code Review](https://app.betrybe.com/course/real-life-engineer/code-review) para te ajudar a revisar os projetos que chegaram para você.
-
-# Avisos Finais
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
-
-Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
-
-O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
-
----
